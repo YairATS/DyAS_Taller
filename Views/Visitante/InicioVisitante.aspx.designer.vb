@@ -11,5 +11,5 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class WebForm1
+Partial Public Class InicioVisitante
 End Class

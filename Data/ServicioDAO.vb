@@ -145,4 +145,41 @@ Public Class ServicioDAO
         Return listaServicios
     End Function
 
+    Public Function CalcularCostoPiezasServicio(servicioId As String) As Decimal
+        Using connection As SqlConnection = conexion.ObtenerConexion()
+            Try
+                connection.Open()
+                Dim query As String = "SELECT dbo.CalcularCostoPiezasServicio(@Servicio_Id)"
+                Using command As New SqlCommand(query, connection)
+                    command.Parameters.AddWithValue("@Servicio_Id", servicioId)
+                    Dim result As Object = command.ExecuteScalar()
+                    If result IsNot Nothing Then
+                        Return Convert.ToDecimal(result)
+                    Else
+                        Return 0
+                    End If
+                End Using
+            Catch ex As Exception
+                ' Manejo de errores
+                Throw New Exception("Error al calcular el costo de las piezas del servicio: " & ex.Message)
+            End Try
+        End Using
+    End Function
+
+    Public Sub ActualizarCostoEstimadoServicio(servicioId As String)
+        Using connection As SqlConnection = conexion.ObtenerConexion()
+            Try
+                connection.Open()
+                Dim query As String = "EXEC dbo.ActualizarCostoEstimadoServicio @Servicio_Id"
+                Using command As New SqlCommand(query, connection)
+                    command.Parameters.AddWithValue("@Servicio_Id", servicioId)
+                    command.ExecuteNonQuery()
+                End Using
+            Catch ex As Exception
+                ' Manejo de errores
+                Throw New Exception("Error al actualizar el costo estimado del servicio: " & ex.Message)
+            End Try
+        End Using
+    End Sub
+
 End Class

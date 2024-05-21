@@ -1,0 +1,131 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site2.master.vb" Inherits="WebApplication8.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 1078px;
+        }
+        .auto-style2 {
+            height: 214px;
+            text-align: center;
+        }
+        .auto-style3 {
+            height: 550px;
+        }
+        .auto-style5 {
+            height: 550px;
+            width: 384px;
+        }
+        .auto-style6 {
+            width: 384px;
+        }
+        .auto-style9 {
+            width: 981px;
+        }
+        .auto-style11 {
+            position: absolute;
+            top: 413px;
+            left: 72px;
+            z-index: 1;
+            bottom: 248px;
+        }
+        .auto-style12 {
+            position: absolute;
+            top: 493px;
+            left: 72px;
+            z-index: 1;
+        }
+        .auto-style13 {
+            position: absolute;
+            top: 565px;
+            left: 72px;
+            z-index: 1;
+            bottom: 328px;
+        }
+        .auto-style14 {
+            position: absolute;
+            top: 648px;
+            left: 72px;
+            z-index: 1;
+            width: 30px;
+            height: 30px;
+        }
+        .auto-style15 {
+            position: absolute;
+            top: 425px;
+            left: 138px;
+            z-index: 1;
+            font-family: "Berlin Sans FB";
+            font-size: large;
+        }
+        .auto-style16 {
+            position: absolute;
+            top: 499px;
+            left: 138px;
+            z-index: 1;
+            font-family: "Berlin Sans FB";
+            font-size: large;
+        }
+        .auto-style17 {
+            position: absolute;
+            top: 575px;
+            left: 138px;
+            z-index: 1;
+            font-family: "Berlin Sans FB";
+            font-size: large;
+        }
+        .auto-style18 {
+            position: absolute;
+            top: 652px;
+            left: 138px;
+            z-index: 1;
+            font-family: "Berlin Sans FB";
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2" colspan="3">
+                    <asp:ImageButton ID="ImageButton5" runat="server" Height="232px" ImageUrl="~/Images/Logo.png" Width="230px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5">
+                    <asp:ImageButton ID="ImageButton1" runat="server" CssClass="auto-style11" Height="40px" ImageUrl="~/Images/user.png" Width="40px" />
+                    <asp:ImageButton ID="ImageButton2" runat="server" CssClass="auto-style12" Height="40px" ImageUrl="~/Images/car.png" Width="40px" />
+                    <asp:ImageButton ID="ImageButton4" runat="server" CssClass="auto-style14" ImageUrl="~/Images/support.png" />
+                    <asp:ImageButton ID="ImageButton3" runat="server" CssClass="auto-style13" Height="40px" ImageUrl="~/Images/settings-gears.png" Width="40px" />
+                    <asp:Label ID="Label1" runat="server" CssClass="auto-style15" Text="Clientes"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" CssClass="auto-style16" Text="Autos"></asp:Label>
+                    <asp:Label ID="Label3" runat="server" CssClass="auto-style17" Text="Piezas / Refacciones"></asp:Label>
+                    <asp:Label ID="Label4" runat="server" CssClass="auto-style18" Text="Servicio"></asp:Label>
+                </td>
+                <td class="auto-style3" colspan="2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style6">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

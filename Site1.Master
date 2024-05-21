@@ -16,7 +16,7 @@
         .auto-style2 {
             height: 137px;
             text-align: center;
-            background-color: #000066;
+            background-color: #FFFFFF;
         }
         .auto-style3 {
             height: 461px;
@@ -35,11 +35,13 @@
         .auto-style7 {
             width: 1329px;
         }
-        .auto-style8 {
+        .auto-style9 {
+            width: 177px;
+            height: 171px;
+        }
+        .auto-style10 {
             font-family: "Berlin Sans FB";
-            font-size: 50pt;
-            color: #FFFFFF;
-            font-style: italic;
+            font-size: large;
         }
     </style>
 </head>
@@ -52,7 +54,9 @@
         <table class="auto-style1">
             <tr>
                 <td class="auto-style2" colspan="3">
-                    <asp:Label ID="Label1" runat="server" CssClass="auto-style8" Text="¡Buen día!"></asp:Label>
+                    <img alt="" class="auto-style9" src="Images/Logo.png" /><br />
+                    <br />
+                    <asp:Label ID="Label1" runat="server" CssClass="auto-style10" Text="¡Le damos la bienvenida!"></asp:Label>
                 </td>
             </tr>
             <tr>

@@ -1,0 +1,154 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site4.master.vb" Inherits="WebApplication8.Site4" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 239px;
+        }
+        .auto-style3 {
+            height: 239px;
+            text-align: center;
+            width: 1175px;
+        }
+        .auto-style4 {
+            position: absolute;
+            top: 40px;
+            left: 787px;
+            height: 230px;
+            z-index: 1;
+        }
+        .auto-style5 {
+            height: 501px;
+        }
+        .auto-style6 {
+            height: 239px;
+            width: 284px;
+        }
+        .auto-style7 {
+            height: 501px;
+            width: 284px;
+        }
+        .auto-style8 {
+            width: 284px;
+            height: 171px;
+        }
+        .auto-style9 {
+            height: 501px;
+            width: 1175px;
+        }
+        .auto-style10 {
+            width: 1175px;
+            height: 171px;
+        }
+        .auto-style11 {
+            height: 171px;
+        }
+        .auto-style12 {
+            height: 171px;
+            position: absolute;
+            top: 416px;
+            left: 63px;
+            z-index: 1;
+        }
+        .auto-style13 {
+            height: 171px;
+            position: absolute;
+            top: 352px;
+            left: 63px;
+            z-index: 1;
+        }
+        .auto-style14 {
+            height: 171px;
+            position: absolute;
+            top: 464px;
+            left: 62px;
+            z-index: 1;
+        }
+        .auto-style15 {
+            height: 42px;
+            position: absolute;
+            top: 537px;
+            left: 63px;
+            z-index: 1;
+            width: 36px;
+        }
+        .auto-style16 {
+            position: absolute;
+            top: 369px;
+            left: 144px;
+            z-index: 1;
+            font-family: "Berlin Sans FB";
+        }
+        .auto-style17 {
+            position: absolute;
+            top: 547px;
+            left: 141px;
+            z-index: 1;
+            font-family: "Berlin Sans FB";
+        }
+        .auto-style18 {
+            position: absolute;
+            top: 424px;
+            left: 152px;
+            z-index: 1;
+            font-family: "Berlin Sans FB";
+        }
+        .auto-style19 {
+            position: absolute;
+            top: 481px;
+            left: 128px;
+            z-index: 1;
+            font-family: "Berlin Sans FB";
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style6"></td>
+                <td class="auto-style3">
+                    <asp:ImageButton ID="ImageButton1" runat="server" CssClass="auto-style4" ImageUrl="~/Images/Logo.png" Width="232px" />
+                </td>
+                <td class="auto-style2"></td>
+            </tr>
+            <tr>
+                <td class="auto-style7">
+                    <asp:ImageButton ID="ImageButton2" runat="server" CssClass="auto-style13" Height="40px" ImageUrl="~/Images/user.png" Width="40px" />
+                    <asp:ImageButton ID="ImageButton3" runat="server" CssClass="auto-style12" Height="40px" ImageUrl="~/Images/car.png" Width="40px" />
+                    <asp:ImageButton ID="ImageButton4" runat="server" CssClass="auto-style14" Height="40px" ImageUrl="~/Images/settings-gears.png" Width="40px" />
+                    <asp:ImageButton ID="ImageButton5" runat="server" CssClass="auto-style15" ImageUrl="~/Images/support.png" height="40px" width="40px" />
+                    <asp:Label ID="Label1" runat="server" CssClass="auto-style16" Text="Clientes"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" CssClass="auto-style18" Text="Autos"></asp:Label>
+                    <asp:Label ID="Label3" runat="server" CssClass="auto-style17" Text="Servicios"></asp:Label>
+                    <asp:Label ID="Label4" runat="server" CssClass="auto-style19" Text="Refacciones"></asp:Label>
+                </td>
+                <td class="auto-style9">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style5"></td>
+            </tr>
+            <tr>
+                <td class="auto-style8"></td>
+                <td class="auto-style10"></td>
+                <td class="auto-style11"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

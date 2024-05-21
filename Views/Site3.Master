@@ -1,0 +1,42 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site3.master.vb" Inherits="WebApplication8.Site3" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 550px;
+        }
+        .auto-style3 {
+            height: 170px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style3"></td>
+        </tr>
+        <tr>
+            <td class="auto-style2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>

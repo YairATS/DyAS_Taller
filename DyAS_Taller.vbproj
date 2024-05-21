@@ -46,6 +46,9 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Dashboard.v23.2.Core, Version=23.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v23.2, Version=23.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v23.2, Version=23.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -92,11 +95,26 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\car.png" />
+    <Content Include="Images\Logo.png" />
+    <Content Include="Images\settings-gears.png" />
+    <Content Include="Images\support.png" />
+    <Content Include="Images\user.png" />
+    <Content Include="Views\Admin\AutosCRUD.aspx" />
     <Content Include="Views\Admin\ClientesCRUD.aspx" />
+    <Content Include="Views\Admin\InicioAdmin.aspx" />
+    <Content Include="Views\Admin\PiezasCRUD.aspx" />
+    <Content Include="Views\Admin\ServiciosCRUD.aspx" />
+    <Content Include="Views\Dashboard.aspx" />
+    <Content Include="Views\Acceso.aspx" />
+    <Content Include="Views\Login.aspx" />
+    <Content Include="Views\Visitante\AutosView.aspx" />
+    <Content Include="Views\Visitante\ClientesView.aspx" />
+    <Content Include="Views\Visitante\InicioVisitante.aspx" />
+    <Content Include="Views\Visitante\RefaccionesView.aspx" />
+    <Content Include="Views\Visitante\ServiciosView.aspx" />
     <Content Include="Web.config" />
-    <Content Include="Views\WebForm1.aspx" />
-    <Content Include="Views\Inicio\Roles.aspx" />
-    <Content Include="Views\Inicio\Login.aspx" />
+    <Content Include="Views\Roles.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\AutosDAO.vb" />
@@ -137,32 +155,123 @@
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Site2.Master.designer.vb">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.Master.vb">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\AutosCRUD.aspx.designer.vb">
+      <DependentUpon>AutosCRUD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\AutosCRUD.aspx.vb">
+      <DependentUpon>AutosCRUD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Views\Admin\ClientesCRUD.aspx.designer.vb">
       <DependentUpon>ClientesCRUD.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\ClientesCRUD.aspx.vb">
       <DependentUpon>ClientesCRUD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\InicioAdmin.aspx.designer.vb">
+      <DependentUpon>InicioAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\InicioAdmin.aspx.vb">
+      <DependentUpon>InicioAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\PiezasCRUD.aspx.designer.vb">
+      <DependentUpon>PiezasCRUD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\PiezasCRUD.aspx.vb">
+      <DependentUpon>PiezasCRUD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\ServiciosCRUD.aspx.designer.vb">
+      <DependentUpon>ServiciosCRUD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ServiciosCRUD.aspx.vb">
+      <DependentUpon>ServiciosCRUD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Views\Dashboard.aspx.designer.vb">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard.aspx.vb">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Views\Acceso.aspx.designer.vb">
+      <DependentUpon>Acceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Acceso.aspx.vb">
+      <DependentUpon>Acceso.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Views\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Views\Site3.Master.designer.vb">
+      <DependentUpon>Site3.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Site3.Master.vb">
+      <DependentUpon>Site3.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\WebForm1.aspx.designer.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\WebForm1.aspx.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Views\Inicio\Roles.aspx.designer.vb">
+    <Compile Include="Views\Roles.aspx.designer.vb">
       <DependentUpon>Roles.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\Inicio\Roles.aspx.vb">
+    <Compile Include="Views\Roles.aspx.vb">
       <DependentUpon>Roles.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Views\Inicio\Login.aspx.designer.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Views\Site4.Master.designer.vb">
+      <DependentUpon>Site4.Master</DependentUpon>
     </Compile>
-    <Compile Include="Views\Inicio\Login.aspx.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Views\Site4.Master.vb">
+      <DependentUpon>Site4.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Visitante\AutosView.aspx.designer.vb">
+      <DependentUpon>AutosView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Visitante\AutosView.aspx.vb">
+      <DependentUpon>AutosView.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Views\Visitante\ClientesView.aspx.designer.vb">
+      <DependentUpon>ClientesView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Visitante\ClientesView.aspx.vb">
+      <DependentUpon>ClientesView.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Views\Visitante\InicioVisitante.aspx.designer.vb">
+      <DependentUpon>InicioVisitante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Visitante\InicioVisitante.aspx.vb">
+      <DependentUpon>InicioVisitante.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Views\Visitante\RefaccionesView.aspx.designer.vb">
+      <DependentUpon>RefaccionesView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Visitante\RefaccionesView.aspx.vb">
+      <DependentUpon>RefaccionesView.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Views\Visitante\ServiciosView.aspx.designer.vb">
+      <DependentUpon>ServiciosView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Visitante\ServiciosView.aspx.vb">
+      <DependentUpon>ServiciosView.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
@@ -173,6 +282,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Content Include="Views\App_LocalResources\Dashboard.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -186,6 +296,9 @@
     </None>
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
+    <Content Include="Site2.Master" />
+    <Content Include="Views\Site3.Master" />
+    <Content Include="Views\Site4.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

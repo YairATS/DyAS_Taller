@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class ClientesCRUD
+Partial Public Class AutosCRUD
 
     '''<summary>
     '''Control Label5.
@@ -23,6 +23,15 @@ Partial Public Class ClientesCRUD
     Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''Control txtId.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtId As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Control SqlDataSource2.
     '''</summary>
     '''<remarks>
@@ -30,6 +39,15 @@ Partial Public Class ClientesCRUD
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents SqlDataSource2 As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Control SqlDataSource1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''Control Label6.
@@ -41,13 +59,13 @@ Partial Public Class ClientesCRUD
     Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control txtNombre.
+    '''Control txtMarca.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtNombre As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtMarca As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control Label7.
@@ -59,13 +77,13 @@ Partial Public Class ClientesCRUD
     Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control txtPaterno.
+    '''Control txtModelo.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtPaterno As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtModelo As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control Label8.
@@ -77,22 +95,22 @@ Partial Public Class ClientesCRUD
     Protected WithEvents Label8 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control txtMaterno.
+    '''Control txtColor.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtMaterno As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtColor As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control GridViewClientes.
+    '''Control GridView1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents GridViewClientes As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
     '''Control Label9.
@@ -104,85 +122,13 @@ Partial Public Class ClientesCRUD
     Protected WithEvents Label9 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control txtId.
+    '''Control txtTipo.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtId As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control txtDireccion.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtDireccion As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control txtTelefono.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtTelefono As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control btnRegistrar.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents btnRegistrar As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Control Button2.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Control btnModificar.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents btnModificar As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Control Label10.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Label10 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Control btnBorrar.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents btnBorrar As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Control Button5.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Button5 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents txtTipo As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control lblMensaje.
@@ -194,20 +140,65 @@ Partial Public Class ClientesCRUD
     Protected WithEvents lblMensaje As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control Label11.
+    '''Control Label10.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Label11 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label10 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control txtFrecuente.
+    '''Control DropClientesId.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtFrecuente As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DropClientesId As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control btnRegistrar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnRegistrar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control btnConsultar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnConsultar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control btnModificar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnModificar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control btnBorrar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnBorrar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control ButtonLimpiar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ButtonLimpiar As Global.System.Web.UI.WebControls.Button
 End Class
